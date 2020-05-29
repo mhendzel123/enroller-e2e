@@ -22,6 +22,7 @@ public class AuthorizationTestSuite {
 	@Before
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "lib/geckodriver-exe");
 		driver = new ChromeDriver();
 		driver.get("http://localhost:8088/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
